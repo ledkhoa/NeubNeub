@@ -34,6 +34,12 @@ namespace NeubNeub.Modules
             await GiphyQuery("https://api.giphy.com/v1/gifs/random?api_key=GO2uNoWENkMoCV4pjjW4rYsH9sjaNOVn&tag=" + tags);
         }
 
+        [Command("trending")]
+         public async Task Trending()
+        {
+            await GiphyQuery("https://api.giphy.com/v1/gifs/trending?api_key=GO2uNoWENkMoCV4pjjW4rYsH9sjaNOVn");
+        }
+
         private async Task GiphyQuery(string url)
         {
             var response = await new HttpClient().GetAsync(url);

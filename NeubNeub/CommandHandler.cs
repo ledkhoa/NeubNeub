@@ -35,9 +35,9 @@ namespace NeubNeub
                 {
                     var result = await _service.ExecuteAsync(context, argPos);
 
-                    if (!result.IsSuccess && result.Error != CommandError.UnknownCommand)
+                    if (!result.IsSuccess)
                     {
-                        await context.Channel.SendMessageAsync(result.ErrorReason);
+                        await context.Channel.SendMessageAsync("waduhek");
                     }
                 }
             }

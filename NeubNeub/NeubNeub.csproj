@@ -96,7 +96,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandHandler.cs" />
+    <Compile Include="Modules\Gfycat.cs" />
     <Compile Include="Modules\Giphy.cs" />
+    <Compile Include="Modules\Misc.cs" />
     <Compile Include="NeubNeub.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
